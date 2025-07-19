@@ -1,0 +1,6 @@
+import random
+import string
+passwordlen=12
+charval=string.ascii_letters+string.digits+string.punctuation
+result="".join([random.choice(charval) for i in range(passwordlen)])
+print("my random password is:",result)
